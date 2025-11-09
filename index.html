@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Curriculum vitæ de Fabienne Saubert pour poste de Développeur Web"
+    />
+    <link rel="icon" type="image/png" href="./images/InitialesFavi.png" />
+    <link rel="stylesheet" href="./minified.css" />
+    <link rel="stylesheet" href="./minifiedOutput.css" />
+    <title>CV - Fabienne Saubert</title>
+  </head>
+
+  <body class="m-10 shadow-gray-500 shadow-lg p-10">
+    <div class="container mx-auto max-w-5xl">
+      <!-- HEADER -->
+      <section
+        class="grid grid-cols-1 md:grid-cols-3 items-center border-b-2 border-indigo-300 pb-8 mb-10"
+      >
+        <div id="conteneurToggle">
+          <label class="switch" aria-label="Switch mode sombre">
+            <input type="checkbox" id="btnSombre" />
+            <span class="slider"></span>
+          </label>
+          <span class="label-text">Mode sombre</span>
+        </div>
+        <div class="md:col-span-2 flex flex-col items-end">
+          <h1 class="font-bold text-5xl tracking-widest leading-tight">
+            Fabienne SAUBERT
+          </h1>
+          <h2
+            class="text-2xl mt-4 text-indigo-700 font-semibold tracking-wide uppercase"
+          >
+            Développeur Application Junior
+          </h2>
+
+          <ul
+            class="list-none text-lg font-medium mt-12 space-y-1 text-gray-700 contact"
+          >
+            <li>
+              <b>Mail :</b>
+              <a
+                href="mailto:fabienne.saubert@gmail.com"
+                class="hover:text-indigo-600 hover:translate-x-1 inline-block transition-transform duration-200 underline"
+                >fabienne.saubert@gmail.com</a
+              >
+            </li>
+            <li><b>Téléphone :</b> 06.29.13.81.03</li>
+            <li><b>Adresse :</b> Route de Pézenas, 34230 Paulhan</li>
+            <li>
+              <b>LinkedIn :</b>
+              <a
+                class="hover:text-indigo-600 hover:translate-x-1 inline-block transition-transform duration-200 underline"
+                href="www.linkedin.com/in/fabienne-saubert"
+                >www.linkedin.com/in/fabienne-saubert</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- PHOTO -->
+        <div
+          class="flex justify-center md:justify-end items-center mt-6 md:mt-0"
+        >
+          <img
+            src="images/PhotoCV.webp"
+            alt="Photo de Fabienne Saubert"
+            class="max-w-[250px] h-auto rounded-md"
+            fetchpriority="high"
+          />
+        </div>
+      </section>
+
+      <!-- MAIN -->
+      <main class="grid md:grid-cols-3 gap-8 leading-9 tracking-widest">
+        <!-- COLONNE GAUCHE -->
+        <div class="md:col-span-1 pr-6 border-r border-gray-200 space-y-20">
+          <!-- Profil -->
+          <section id="profile" class="pb-6">
+            <h2
+              class="pb-3 text-2xl font-bold tracking-widest text-indigo-700 mb-5"
+            >
+              PROFIL
+            </h2>
+            <p class="text-lg leading-8 font-medium">
+              Ancienne directrice de magasin, j’ai dirigé plusieurs centres de
+              profit avant de me reconvertir dans un domaine qui me passionne :
+              le développement informatique. Curieuse, organisée et
+              persévérante, je m’appuie sur mes compétences en gestion et en
+              analyse pour progresser dans cette nouvelle voie et contribuer
+              efficacement aux projets de mon futur employeur.
+            </p>
+          </section>
+
+          <!-- Formation -->
+          <section id="formation" class="pb-6 mt-8">
+            <h2
+              class="pb-3 text-2xl font-bold tracking-widest text-indigo-700 mb-5"
+            >
+              FORMATION
+            </h2>
+            <ul class="ml-1 text-lg font-medium space-y-5">
+              <li>
+                <b>2025 (en cours...) :</b> Titre professionnel Développeur web
+                et web mobile
+              </li>
+              <li><b>2019 :</b> BTS Gestionnaire d’entreprise</li>
+              <li><b>2014 :</b> DAEU A</li>
+              <li><b>2006 :</b> BEP Vente</li>
+            </ul>
+          </section>
+
+          <!-- Soft skills -->
+          <section class="mt-8">
+            <h2
+              class="pb-3 text-2xl font-bold tracking-widest text-indigo-700 mb-5"
+            >
+              SOFT SKILLS
+            </h2>
+            <ul class="text-lg font-medium space-y-4 list-disc ml-6">
+              <li>Curiosité intellectuelle</li>
+              <li>Esprit analytique et structuré</li>
+              <li>Résolution de problèmes</li>
+              <li>Prise d’initiative</li>
+              <li>Travail sous pression</li>
+            </ul>
+          </section>
+        </div>
+
+        <!-- COLONNE DROITE -->
+
+        <!-- Hard skills -->
+        <section class="md:col-span-2 pl-0 md:pl-8">
+          <!-- <ul class="text-lg font-medium space-y-4 ml-6 inline-flex gap-4"> -->
+          <table
+            class="w-full border-separate table-fixed border-spacing-x-3 border-spacing-y-5"
+          >
+            <caption
+              class="pb-3 mb-5 text-2xl font-bold tracking-widest text-indigo-700 text-start"
+            >
+              LANGAGES & OUTILS
+            </caption>
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="./images/logoHTML.webp"
+                    alt="Logo HTML"
+                    class="w-15"
+                    title="HTML"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="./images/logoCSS.webp"
+                    alt="Logo CSS"
+                    class="w-15"
+                    title="CSS"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="./images/logoJS.webp"
+                    alt="Logo Javascript"
+                    class="w-15"
+                    title="Javascript"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="./images/PHP-logo.webp"
+                    alt="Logo PHP"
+                    class="w-25"
+                    title="PHP"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="./images/logoREACT.webp"
+                    alt="Logo React"
+                    title="React"
+                    class="w-22"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="./images/logoVS.webp"
+                    alt="Logo VS Code"
+                    class="w-15"
+                    title="VS Code"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="./images/logoTRELLO.webp"
+                    alt="Logo Trello"
+                    class="w-15"
+                    title="Trello"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="./images/logoGIT.webp"
+                    alt="Logo Git"
+                    class="w-15"
+                    title="GitHub"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="./images/logoDOCKER.webp"
+                    alt="Logo de Docker"
+                    title="Docker"
+                    class="w-18"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="./images/logoSYMFONY.webp"
+                    alt="Logo Symfony"
+                    class="w-15"
+                    title="Symfony"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="./images/logoTAILWIND.webp"
+                    alt="Logo Tailwind"
+                    class="w-20"
+                    title="Tailwind"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="./images/logoBOOTSTRAP.webp"
+                    alt="Logo Bootstrap"
+                    class="w-20 -ml-2"
+                    title="Bootstrap"
+                  />
+                </td>
+
+                <td>
+                  <img
+                    src="./images/logoSQL.webp"
+                    alt="Logo SQL"
+                    class="w-15"
+                    title="SQL"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="./images/logoMYSQL.webp"
+                    alt="Logo MySQL"
+                    class="w-22"
+                    title="MySQL"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="./images/logoGREEN.webp"
+                    alt="Logo >Green Code"
+                    class="w-18"
+                    title="Green Code"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2
+            class="text-2xl font-bold tracking-widest text-indigo-700 mb-8 mt-10"
+          >
+            PROJETS DÉVELOPPEMENT
+          </h2>
+
+          <section class="mb-10 space-y-5 p-5">
+            <h3 class="font-bold text-lg mb-5">Mon CV en ligne</h3>
+            <ul class="list-disc ml-6 mt-3 text-lg font-medium space-y-2">
+              <li>Première version en CSS pur</li>
+              <li>Deuxième version avec Tailwindcss</li>
+              <li>
+                Troisième version : ajout d'un script.js pour le mode sombre
+              </li>
+              <li>
+                Lien GitHub :
+                <a
+                  class="hover:text-indigo-600 hover:translate-x-1 inline-block transition-transform duration-200 underline lienGit"
+                  href="https://github.com/FabienneSaubert/MonCv.git"
+                  >Repository MonCV</a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="mb-10 space-y-5 p-5">
+            <h3 class="font-bold text-lg mb-5">Projet “Netflix”</h3>
+            <ul class="list-disc ml-6 mt-3 text-lg font-medium space-y-2">
+              <li>Première version : HTML / CSS</li>
+              <li>Deuxième version : requête sur fichier XML</li>
+              <li>Troisième version : requête sur fichier JSON</li>
+              <li>Quatrième version : requête API</li>
+              <li>
+                Lien GitHub :
+                <a
+                  class="hover:text-indigo-600 hover:translate-x-1 inline-block transition-transform duration-200 underline lienGit"
+                  href="https://github.com/FabienneSaubert/Projet-Netflix.git"
+                  >Repository Netflix</a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="mb-10 space-y-5 p-5">
+            <h3 class="font-bold text-lg mb-5">Projet Green Code</h3>
+            <ul class="list-disc ml-6 mt-3 text-lg font-medium space-y-2">
+              <li>Site vitrine HTML / CSS / JavaScript</li>
+              <li>CSS via Bootstrap et CSS pur</li>
+              <li>JavaScript : menu burger sur mobile et mode sombre</li>
+              <li>Optimisation du site selon les normes Green Code</li>
+              <li>JavaScript et CSS minifiés</li>
+              <li>
+                Lien GitHub :
+                <a
+                  class="hover:text-indigo-600 hover:translate-x-1 inline-block transition-transform duration-200 underline lienGit"
+                  href="https://github.com/FabienneSaubert/Green-code.git"
+                  >Repository Green Code</a
+                >
+              </li>
+            </ul>
+          </section>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="mt-12 border-t-2 border-indigo-300 pt-8">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 text-center md:text-left"
+        >
+          <!-- SOCIAL MEDIAS -->
+          <div class="flex-1 text-center justify-content-center">
+            <h2 class="text-2xl font-bold tracking-widest text-indigo-700 mb-3">
+              SOCIAL MEDIAS
+            </h2>
+            <div class="flex gap-x-6 justify-center md:justify-center">
+              <a
+                class="hover:rotate-8 duration-200"
+                href="https://github.com/FabienneSaubert/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./images/LogoGithub.webp"
+                  alt="GitHub"
+                  class="h-auto w-14"
+                  loading="lazy"
+                />
+              </a>
+              <a
+                class="hover:rotate-8 duration-200"
+                href="https://www.linkedin.com/in/fabienne-saubert"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./images/linkedin-logo-240x212.webp"
+                  alt="LinkedIn"
+                  class="h-auto w-14"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
