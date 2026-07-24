@@ -1,0 +1,16 @@
+#!/bin/sh
+# Régénère le CSS minifié avant chaque commit, puis l'ajoute au commit en cours.
+# Évite de pousser un minifiedOutput.css périmé par rapport à style.css.
+
+if [ ! -d node_modules ]; then
+  echo "pre-commit : node_modules absent — lance 'npm install' d'abord." >&2
+  exit 1
+fi
+
+echo "pre-commit : génération du CSS…"
+if ! npm run --silent build; then
+  echo "pre-commit : le build CSS a échoué, commit annulé." >&2
+  exit 1
+fi
+
+git add minifiedOutput.css

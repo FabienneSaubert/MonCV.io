@@ -1,1 +1,4 @@
-/src
+node_modules/
+
+# Sortie de build non minifiée (générée par l'ancienne commande Tailwind)
+src/output.css

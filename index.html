@@ -8,7 +8,6 @@
       content="Concepteur Développeur d'Applications – Recherche alternance – Béziers / Montpellier / Narbonne / Télétravail"
     />
     <link rel="icon" type="image/png" href="./images/InitialesFavi.png" />
-    <link rel="stylesheet" href="./minified.css" />
     <link rel="stylesheet" href="./minifiedOutput.css" />
     <title>
       Fabienne Saubert – Concepteur Développeur d'Applications – Alternance
@@ -17,19 +16,54 @@
   </head>
 
   <body
-    class="m-10 md:m-8 p-4 md:p-10 shadow-gray-500 shadow-lg overflow-hidden"
+    class="m-10 md:m-8 mt-16 md:mt-14 p-4 md:p-10 shadow-gray-500 shadow-lg"
   >
     <div class="container mx-auto max-w-5xl px-4 md:px-0">
       <!-- HEADER -->
       <header
         class="grid grid-cols-1 md:grid-cols-3 items-center border-b-2 border-indigo-300 pb-8 mb-10"
       >
-        <div id="conteneurToggle" class="m-3 p-3 md:m-8 md:p-8">
-          <label class="switch" aria-label="Switch mode sombre">
-            <input type="checkbox" id="btnSombre" />
+        <div id="conteneurToggle">
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="btnSombre"
+              aria-label="Activer le mode sombre"
+            />
             <span class="slider"></span>
           </label>
-          <span class="label-text">Mode sombre</span>
+          <span class="toggle-icone" aria-hidden="true">
+            <svg
+              class="icone-soleil"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <svg
+              class="icone-lune"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </span>
         </div>
 
         <div class="md:col-span-2 flex flex-col items-center">
@@ -87,15 +121,15 @@
       <section
         class="col-span-full border-b-2 border-indigo-300 text-center py-4 mb-5"
       >
-        <h3 class="font-bold mb-5">
+        <h3 class="font-bold mb-5 font">
           Recherche ALTERNANCE pour la rentrée 2026.
         </h3>
         <p class="mb-10">
-          Pour faire suite à l'obtention de mon titre de Développeur
-          d'application Web et Web mobile, je souhaite poursuivre mon parcours
-          en alternance vers un Bachelor Concepteur développeur d'applications.
-          <br />Ouverte aux postes en présentiel (Hérault, Aude, Gard), hybride
-          (Occitanie) ou full remote (France).
+          Fraîchement diplômée du titre de Développeur d'application Web et Web
+          mobile, je souhaite poursuivre mon parcours en alternance vers un
+          Bachelor Concepteur développeur d'applications avec une spécialisation
+          en IA. Ayant pour objectif une création d'entreprise, c'est bien un
+          <b>contrat d'apprentissage</b> que je vous propose.
         </p>
       </section>
 
@@ -164,159 +198,110 @@
             <h2 class="pb-3 mb-5 font-bold tracking-widest text-indigo-700">
               LANGAGES & OUTILS
             </h2>
-            <!-- Ligne 1 -->
-            <div
-              style="
-                display: flex;
-                flex-wrap: wrap;
-                gap: 1rem;
-                align-items: center;
-              "
-            >
+            <div class="logos-grid">
               <img
                 src="./images/logoHTML.webp"
                 alt="Logo HTML5"
                 title="HTML5"
-                class="logo-img mb-5"
               />
-              <img
-                src="./images/logoCSS.webp"
-                alt="Logo CSS3"
-                title="CSS3"
-                class="logo-img mb-5"
-              />
+              <img src="./images/logoCSS.webp" alt="Logo CSS3" title="CSS3" />
               <img
                 src="./images/logoJS.webp"
                 alt="Logo Javascript"
                 title="Javascript"
-                class="logo-img mb-5"
               />
-              <img
-                src="./images/PHP-logo.webp"
-                alt="Logo PHP"
-                title="PHP"
-                class="logo-img-bigger mb-5"
-              />
+              <img src="./images/PHP-logo.webp" alt="Logo PHP" title="PHP" />
               <img
                 src="./images/logoREACT.webp"
                 alt="Logo React"
                 title="React"
-                class="logo-img mb-5"
               />
               <img
                 src="./images/logoEXPRESS.webp"
                 alt="Logo Express"
                 title="Node JS, Express, MongoDB"
-                class="logo-img-bigger mb-5"
               />
               <img
                 src="./images/logoVS.webp"
                 alt="Logo VS Code"
                 title="VS Code"
-                class="logo-img-smaller mb-5"
               />
               <img
                 src="./images/logoTRELLO.webp"
                 alt="Logo Trello"
                 title="Trello"
-                class="logo-img mb-5"
               />
-
-              <!-- Ligne 2 -->
-
               <img
                 src="./images/logoGREEN.webp"
                 alt="Logo Green"
                 title="Green Code"
-                class="logo-img mb-5"
               />
-              <img
-                src="./images/Figma.webp"
-                alt="Logo Figma"
-                title="Figma"
-                class="logo-img mb-5"
-              />
+              <img src="./images/Figma.webp" alt="Logo Figma" title="Figma" />
               <img
                 src="./images/logoTAILWIND.webp"
                 alt="Logo Tailwind"
                 title="Tailwind"
-                class="logo-img-bigger mb-5"
               />
               <img
                 src="./images/logoBOOTSTRAP.webp"
                 alt="Logo Bootstrap"
                 title="Bootstrap"
-                class="logo-img-bigger mb-2"
               />
               <img
                 src="./images/next.js.webp"
                 alt="Logo Next.js"
                 title="Next.js"
-                class="logo-img mb-5"
               />
               <img
                 src="./images/logoSYMFONY.webp"
                 alt="Logo Symfony"
                 title="Symfony"
-                class="logo-img mb-5"
               />
-
-              <!-- Ligne 3 -->
-
-              <img
-                src="./images/logoSQL.webp"
-                alt="Logo SQL"
-                title="SQL"
-                class="logo-img mb-5"
-              />
+              <img src="./images/logoSQL.webp" alt="Logo SQL" title="SQL" />
               <img
                 src="./images/logoMYSQL.webp"
                 alt="Logo MySQL"
                 title="MySQL"
-                class="logo-img mb-5"
               />
               <img
                 src="./images/postgres.webp"
                 alt="Logo PostgreSQL"
                 title="PostgreSQL"
-                class="logo-img mb-5"
               />
-
               <img
                 src="./images/supabase.webp"
                 alt="Logo Supabase"
                 title="Supabase"
-                class="logo-img mb-5"
               />
               <img
                 src="./images/logoDOCKER.webp"
                 alt="Logo Docker"
                 title="Docker"
-                class="logo-img-bigger mb-5"
               />
               <img
                 src="./images/LogoGithub.webp"
                 alt="Logo Github"
                 title="GitHub"
-                class="logo-img mb-5"
               />
               <img
                 src="./images/logoGitLab.webp"
                 alt="Logo GitLab"
                 title="Gitlab"
-                class="logo-img mb-5"
               />
               <img
                 src="./images/logoLINUX.webp"
-                alt="logo Linux"
+                alt="Logo Linux"
                 title="WSL Ubuntu"
-                class="logo-img mb-5"
               />
               <img
                 src="./images/logoWINDOWS.webp"
-                alt="logo Windows"
+                alt="Logo Windows"
                 title="Windows"
-                class="logo-img-smaller mb-5"
+              />
+              <img
+                src="./images/logoPYTHON.png"
+                alt="Logo Python"
+                title="Python"
               />
             </div>
           </div>

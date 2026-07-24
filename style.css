@@ -19,6 +19,22 @@ html {
   height: auto;
 }
 
+/* Grille des logos : cases de taille identique, logos centrés dedans */
+.logos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(42px, 1fr));
+  gap: 1.25rem 0.5rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.logos-grid img {
+  width: 100%;
+  max-width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
 .bordure-droite {
   border-left: none;
 }
@@ -34,6 +50,8 @@ h1 {
 }
 
 body {
+  /* Pas de position:relative ici : #conteneurToggle doit se caler sur la
+     fenêtre, donc rester en dehors de la « feuille » que représente le body. */
   transition:
     background-color 0.4s,
     color 0.4s;
@@ -68,7 +86,8 @@ input:checked + .slider {
 }
 
 input:checked + .slider::before {
-  transform: translateX(24px);
+  /* course = largeur .switch - largeur du curseur - (2 x marge de 3px) */
+  transform: translateX(20px);
 }
 
 .slider {
@@ -88,8 +107,8 @@ input:checked + .slider::before {
   position: absolute;
   will-change: transform;
   content: "";
-  height: 20px;
-  width: 20px;
+  height: 16px;
+  width: 16px;
   left: 3px;
   bottom: 3px;
   background-color: white;
@@ -97,11 +116,36 @@ input:checked + .slider::before {
   border-radius: 50%;
 }
 
+/* Icône soleil / lune, en remplacement du libellé « Mode sombre ».
+   stroke="currentColor" : l'icône suit automatiquement la couleur du texte,
+   donc elle s'éclaircit toute seule en mode sombre. */
+.toggle-icone {
+  display: inline-flex;
+  align-items: center;
+}
+
+.toggle-icone svg {
+  width: 18px;
+  height: 18px;
+}
+
+.icone-lune {
+  display: none;
+}
+
+body.dark-mode .icone-soleil {
+  display: none;
+}
+
+body.dark-mode .icone-lune {
+  display: block;
+}
+
 .switch {
   position: relative;
   display: inline-block;
-  width: 50px;
-  height: 26px;
+  width: 42px;
+  height: 22px;
   vertical-align: middle;
 }
 
@@ -148,6 +192,13 @@ input:checked + .slider::before {
   .logo-img-smaller {
     width: 40px;
     max-width: 40px;
+  }
+  .logos-grid {
+    grid-template-columns: repeat(auto-fill, minmax(54px, 1fr));
+  }
+  .logos-grid img {
+    max-width: 44px;
+    height: 44px;
   }
   html {
     font-size: 14px;

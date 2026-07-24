@@ -1,0 +1,14 @@
+{
+  "name": "moncv-io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CV en ligne - Fabienne Saubert",
+  "scripts": {
+    "prepare": "git config core.hooksPath .githooks || echo \"hook git non configure (pas un depot git)\"",
+    "build": "tailwindcss -i ./src/input.css -o ./minifiedOutput.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./minifiedOutput.css --minify --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.16"
+  }
+}
