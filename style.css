@@ -181,20 +181,12 @@ body.dark-mode .icone-lune {
     border-left: 2px solid #a5b4fc;
     padding-left: 2rem;
   }
-  .logo-img-bigger {
-    width: 65px;
-    max-width: 65px;
-  }
   .logo-img {
     width: 50px;
     max-width: 50px;
   }
-  .logo-img-smaller {
-    width: 40px;
-    max-width: 40px;
-  }
   .logos-grid {
-    grid-template-columns: repeat(auto-fill, minmax(54px, 1fr));
+    grid-template-columns: repeat(8, 1fr);
   }
   .logos-grid img {
     max-width: 44px;
