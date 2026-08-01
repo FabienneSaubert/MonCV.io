@@ -45,9 +45,10 @@ html {
   word-break: break-word;
 }
 
-h1 {
-  font-size: 2rem;
-}
+/* Les tailles de police sont gérées par les utilitaires Tailwind dans le HTML
+   (text-*, md:text-*). Ne pas les redéfinir ici sur des sélecteurs d'élément :
+   style.css est importé hors @layer, il gagnerait donc systématiquement contre
+   les utilitaires de @layer utilities, quelle que soit la spécificité. */
 
 body {
   /* Pas de position:relative ici : #conteneurToggle doit se caler sur la
@@ -167,16 +168,6 @@ body.dark-mode .icone-lune {
 
 /* Desktop : à partir de 768px */
 @media (min-width: 768px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-  h2 {
-    font-size: 1.2rem;
-  }
-  p,
-  li {
-    font-size: 1.125rem;
-  }
   .bordure-droite {
     border-left: 2px solid #a5b4fc;
     padding-left: 2rem;
